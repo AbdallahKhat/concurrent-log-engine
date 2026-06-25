@@ -8,6 +8,7 @@
 class ThreadSafeQueue
 {
 public:
+    ThreadSafeQueue() = default;
     ThreadSafeQueue(size_t max_capacity);
 
     void push(std::string log_line);
