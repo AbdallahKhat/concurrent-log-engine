@@ -9,7 +9,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 find_package(Threads REQUIRED)
 
 add_library(concurrency_utils STATIC
-    src/ThreadSafeQueue.cpp
+    src/thread_safe_queue.cpp
 )
 
 target_include_directories(concurrency_utils PUBLIC include)
