@@ -10,6 +10,7 @@ find_package(Threads REQUIRED)
 
 add_library(concurrency_utils STATIC
     src/log_reader.cpp
+    src/log_analyzer.cpp
 )
 
 target_include_directories(concurrency_utils PUBLIC include)
