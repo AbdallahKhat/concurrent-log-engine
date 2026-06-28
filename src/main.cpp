@@ -2,7 +2,7 @@
 #include <iostream>
 #include <thread>
 
-void producer_worker(ThreadSafeQueue& queue)
+void producer_worker(ThreadSafeQueue<std::string>& queue)
 {
     for (int i = 0; i <= 50; ++i)
     {
@@ -13,7 +13,7 @@ void producer_worker(ThreadSafeQueue& queue)
     }
 }
 
-void consumer_worker(ThreadSafeQueue& queue)
+void consumer_worker(ThreadSafeQueue<std::string>& queue)
 {
     std::string data;
     while (true)
@@ -25,7 +25,7 @@ void consumer_worker(ThreadSafeQueue& queue)
 
 int main()
 {
-    ThreadSafeQueue queue;
+    ThreadSafeQueue<std::string> queue;
 
     std::jthread producer(producer_worker, std::ref(queue));
     std::jthread consumer(consumer_worker, std::ref(queue));
