@@ -8,11 +8,13 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 find_package(Threads REQUIRED)
 
-add_library(concurrency_utils INTERFACE)
+add_library(concurrency_utils STATIC
+    src/log_reader.cpp
+)
 
-target_include_directories(concurrency_utils INTERFACE include)
+target_include_directories(concurrency_utils PUBLIC include)
 
-target_link_libraries(concurrency_utils INTERFACE Threads::Threads)
+target_link_libraries(concurrency_utils PUBLIC Threads::Threads)
 
 add_executable(log_engine_daemon src/main.cpp)
 
