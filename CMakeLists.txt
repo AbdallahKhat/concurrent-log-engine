@@ -9,7 +9,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 find_package(Threads REQUIRED)
 
 add_library(concurrency_utils STATIC
-    src/thread_safe_queue.cpp
+    src/log_reader.cpp
+    src/log_analyzer.cpp
+    src/log_writer.cpp
 )
 
 target_include_directories(concurrency_utils PUBLIC include)

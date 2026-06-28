@@ -1,34 +1,21 @@
+#include "log_analyzer.hpp"
+#include "log_reader.hpp"
+#include "log_writer.hpp"
 #include "thread_safe_queue.hpp"
 #include <iostream>
 #include <thread>
 
-void producer_worker(ThreadSafeQueue& queue)
-{
-    for (int i = 0; i <= 50; ++i)
-    {
-        std::string log = "Log message line number: " + std::to_string(i);
-        queue.push(log);
-        std::cout << "[Producer] Pushed: " << i << std::endl;
-        std::this_thread::sleep_for(std::chrono::milliseconds(20));
-    }
-}
-
-void consumer_worker(ThreadSafeQueue& queue)
-{
-    std::string data;
-    while (true)
-    {
-        queue.pop(data);
-        std::cout << "[Consumer] Processed: " << data << std::endl;
-    }
-}
-
 int main()
 {
-    ThreadSafeQueue queue;
+    ThreadSafeQueue<std::string> raw_log_queue;
+    ThreadSafeQueue<std::string> filtered_issue_queue;
 
-    std::jthread producer(producer_worker, std::ref(queue));
-    std::jthread consumer(consumer_worker, std::ref(queue));
+    std::jthread reader_thread(LogReader{raw_log_queue, "../input_file.txt"});
+    std::jthread analyzer_thread_1(LogAnalyzer{raw_log_queue, filtered_issue_queue});
+    std::jthread analyzer_thread_2(LogAnalyzer{raw_log_queue, filtered_issue_queue});
+    std::jthread writer_thread(LogWriter{filtered_issue_queue, "./output.log"});
+
+    while (true) { std::this_thread::sleep_for(std::chrono::seconds(10)); }
 
     return 0;
 }

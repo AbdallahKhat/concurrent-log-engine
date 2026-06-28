@@ -1,0 +1,200 @@
+2026-06-26 17:44:40.361 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:40.390 [INFO] System heartbeat active.
+2026-06-26 17:44:40.403 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:40.415 [ERROR] Segment frame mismatch on stream parse.
+2026-06-26 17:44:40.444 [CRITICAL] Hardware watchdog timer expired!
+2026-06-26 17:44:40.452 [ERROR] Mutex resource contention timeout exceeded.
+2026-06-26 17:44:40.464 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:40.488 [INFO] System heartbeat active.
+2026-06-26 17:44:40.506 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:40.529 [ERROR] Segment frame mismatch on stream parse.
+2026-06-26 17:44:40.554 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:40.576 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:40.591 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:40.618 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:40.632 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:40.646 [INFO] System heartbeat active.
+2026-06-26 17:44:40.665 [ERROR] Mutex resource contention timeout exceeded.
+2026-06-26 17:44:40.688 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:40.718 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:40.738 [INFO] System heartbeat active.
+2026-06-26 17:44:40.759 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:40.779 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:40.808 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:40.821 [INFO] System heartbeat active.
+2026-06-26 17:44:40.851 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:40.859 [INFO] System heartbeat active.
+2026-06-26 17:44:40.886 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:40.896 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:40.904 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:40.913 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:40.938 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:40.960 [INFO] System heartbeat active.
+2026-06-26 17:44:40.981 [INFO] System heartbeat active.
+2026-06-26 17:44:40.996 [INFO] System heartbeat active.
+2026-06-26 17:44:41.007 [ERROR] Segment frame mismatch on stream parse.
+2026-06-26 17:44:41.028 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:41.039 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.055 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.081 [ERROR] Mutex resource contention timeout exceeded.
+2026-06-26 17:44:41.104 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:41.116 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.140 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.170 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:41.177 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:41.183 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.205 [INFO] System heartbeat active.
+2026-06-26 17:44:41.211 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.238 [INFO] System heartbeat active.
+2026-06-26 17:44:41.247 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.276 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:41.295 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.310 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:41.335 [CRITICAL] Kernel panic signal caught from peripheral layer.
+2026-06-26 17:44:41.355 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.372 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:41.385 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.405 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:41.414 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:41.428 [CRITICAL] Hardware watchdog timer expired!
+2026-06-26 17:44:41.440 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:41.457 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.466 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.473 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.504 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.531 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:41.557 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.568 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.580 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.602 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.618 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.643 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:41.666 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.690 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:41.720 [INFO] System heartbeat active.
+2026-06-26 17:44:41.730 [INFO] System heartbeat active.
+2026-06-26 17:44:41.743 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.757 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:41.781 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.809 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.821 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.836 [INFO] System heartbeat active.
+2026-06-26 17:44:41.844 [INFO] System heartbeat active.
+2026-06-26 17:44:41.857 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:41.877 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:41.898 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:41.917 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:41.946 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:41.964 [INFO] System heartbeat active.
+2026-06-26 17:44:41.978 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:41.988 [ERROR] Failed to write transaction line to isolated block.
+2026-06-26 17:44:41.999 [ERROR] Segment frame mismatch on stream parse.
+2026-06-26 17:44:42.017 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:42.040 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:42.062 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:42.067 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:42.095 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:42.113 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:42.143 [ERROR] Segment frame mismatch on stream parse.
+2026-06-26 17:44:42.164 [INFO] System heartbeat active.
+2026-06-26 17:44:42.193 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:42.221 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:42.235 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:42.260 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:42.270 [INFO] System heartbeat active.
+2026-06-26 17:44:42.290 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:42.310 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:42.335 [ERROR] Mutex resource contention timeout exceeded.
+2026-06-26 17:44:42.346 [INFO] System heartbeat active.
+2026-06-26 17:44:42.372 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:42.392 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:42.412 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:42.422 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:42.444 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:42.461 [INFO] System heartbeat active.
+2026-06-26 17:44:42.469 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:42.476 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:42.489 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:42.516 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:42.530 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:42.555 [INFO] System heartbeat active.
+2026-06-26 17:44:42.566 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:42.588 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:42.615 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:42.643 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:42.662 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:42.687 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:42.716 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:42.741 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:42.750 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:42.758 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:42.778 [INFO] System heartbeat active.
+2026-06-26 17:44:42.795 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:42.825 [INFO] System heartbeat active.
+2026-06-26 17:44:42.846 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:42.865 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:42.885 [ERROR] Mutex resource contention timeout exceeded.
+2026-06-26 17:44:42.912 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:42.938 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:42.947 [INFO] System heartbeat active.
+2026-06-26 17:44:42.963 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:42.978 [ERROR] Failed to write transaction line to isolated block.
+2026-06-26 17:44:42.996 [ERROR] Failed to write transaction line to isolated block.
+2026-06-26 17:44:43.023 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.032 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:43.056 [INFO] System heartbeat active.
+2026-06-26 17:44:43.065 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:43.086 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:43.107 [ERROR] Mutex resource contention timeout exceeded.
+2026-06-26 17:44:43.133 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.144 [INFO] System heartbeat active.
+2026-06-26 17:44:43.172 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:43.199 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:43.210 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:43.219 [ERROR] Failed to write transaction line to isolated block.
+2026-06-26 17:44:43.238 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:43.264 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:43.289 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:43.297 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:43.314 [INFO] System heartbeat active.
+2026-06-26 17:44:43.326 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:43.344 [INFO] System heartbeat active.
+2026-06-26 17:44:43.352 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.362 [INFO] System heartbeat active.
+2026-06-26 17:44:43.375 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.392 [ERROR] Failed to write transaction line to isolated block.
+2026-06-26 17:44:43.404 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:43.432 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.460 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.487 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:43.504 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:43.513 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:43.518 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:43.537 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:43.553 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:43.581 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.600 [INFO] System heartbeat active.
+2026-06-26 17:44:43.628 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:43.640 [CRITICAL] Hardware watchdog timer expired!
+2026-06-26 17:44:43.666 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:43.678 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:43.689 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:43.702 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.730 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.750 [WARNING] Delayed disk I/O flush detected.
+2026-06-26 17:44:43.757 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:43.775 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.785 [INFO] System heartbeat active.
+2026-06-26 17:44:43.806 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:43.828 [WARNING] Bounded queue capacity reaching capacity thresholds.
+2026-06-26 17:44:43.854 [INFO] POSIX message channel verified cleanly.
+2026-06-26 17:44:43.865 [WARNING] High CPU scheduling latency detected.
+2026-06-26 17:44:43.877 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:43.889 [INFO] Buffer allocation sweep successful.
+2026-06-26 17:44:43.901 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:43.926 [CRITICAL] Hardware watchdog timer expired!
+2026-06-26 17:44:43.933 [ERROR] Mutex resource contention timeout exceeded.
+2026-06-26 17:44:43.957 [ERROR] Mutex resource contention timeout exceeded.
+2026-06-26 17:44:43.982 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:44.000 [INFO] Worker thread worker pool checked in.
+2026-06-26 17:44:44.011 [INFO] Worker thread worker pool checked in.
