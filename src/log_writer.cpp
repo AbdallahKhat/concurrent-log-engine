@@ -18,15 +18,15 @@ void LogWriter::operator()(std::stop_token st)
     }
 
     std::string line;
-    while (!st.stop_requested())
+    while (true)
     {
-        m_queue.pop(line);
+        if (!m_queue.pop(line, st)) { break; }
         line += '\n';
         output_file << line;
         output_file.flush(); // Don't wait for large buffer before writing to disk
     }
 
     // Graceful shutdown sequence when stop token is triggered
-    std::cout << "[LogWriter] Shutting down. Closing file.\n";
+    std::cerr << "[LogWriter] Stop token received. Closing output file stream.\n";
     output_file.close();
 }

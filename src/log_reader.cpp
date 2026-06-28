@@ -40,7 +40,7 @@ void LogReader::operator()(std::stop_token st)
                     incomplete_line.clear();
                 }
 
-                m_queue.push(line);
+                if (!m_queue.push(line, st)) { break; }
                 continue;
             }
         }
@@ -48,7 +48,7 @@ void LogReader::operator()(std::stop_token st)
         {
             // A catastrophic stream error occurred (ex. file deleted from disk)
             std::cerr << "[LogReader] Stream fatal error. Shutting down reader.\n";
-            break;
+            return;
         }
 
         // Reached End of file, no extracted chars (eofbit & failbit: true)
@@ -58,6 +58,6 @@ void LogReader::operator()(std::stop_token st)
     }
 
     // Graceful shutdown sequence when stop token is triggered
-    std::cout << "[LogReader] Shutting down. Closing file.\n";
+    std::cerr << "[LogReader] Stop token received. Closing input file stream.\n";
     log_file.close();
 }
