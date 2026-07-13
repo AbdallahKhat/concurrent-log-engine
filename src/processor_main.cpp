@@ -1,4 +1,6 @@
+#include "ipc_config.hpp"
 #include "log_analyzer.hpp"
+#include "log_ipc_sender.hpp"
 #include "log_reader.hpp"
 #include "log_writer.hpp"
 #include "thread_safe_queue.hpp"
@@ -7,26 +9,38 @@
 #include <pthread.h>
 #include <thread>
 
-int main()
+sigset_t block_shutdown_signals()
 {
     sigset_t set;
     sigemptyset(&set);
     sigaddset(&set, SIGINT);
     sigaddset(&set, SIGTERM);
 
+    // Block signals so they get queued instead of forcefully killing the app
     pthread_sigmask(SIG_BLOCK, &set, nullptr);
 
-    std::stop_source shutdown_source;
+    return set;
+}
+
+int main()
+{
+    sigset_t set = block_shutdown_signals();
 
     ThreadSafeQueue<std::string> raw_log_queue;
     ThreadSafeQueue<std::string> filtered_issue_queue;
 
+    LogIPCSender log_ipc_sender{filtered_issue_queue, ipc::config::queue_name.data()};
+    if (!log_ipc_sender.is_valid()) { return EXIT_FAILURE; }
+
+    std::stop_source shutdown_source;
     std::stop_token shutdown_tk = shutdown_source.get_token();
 
     std::jthread reader_thread(LogReader{raw_log_queue, "../input_file.txt"}, shutdown_tk);
+
     std::jthread analyzer_thread_1(LogAnalyzer{raw_log_queue, filtered_issue_queue}, shutdown_tk);
     std::jthread analyzer_thread_2(LogAnalyzer{raw_log_queue, filtered_issue_queue}, shutdown_tk);
-    std::jthread writer_thread(LogWriter{filtered_issue_queue, "./output.log"}, shutdown_tk);
+
+    std::jthread ipc_sender_thread(&LogIPCSender::start_sending, &log_ipc_sender, shutdown_tk);
 
     int signal_number;
     sigwait(&set, &signal_number);
@@ -36,5 +50,5 @@ int main()
 
     shutdown_source.request_stop();
 
-    return 0;
+    return EXIT_SUCCESS;
 }
