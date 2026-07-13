@@ -23,3 +23,7 @@ target_link_libraries(concurrency_utils PUBLIC Threads::Threads)
 add_executable(log_processor_daemon src/processor_main.cpp)
 
 target_link_libraries(log_processor_daemon PRIVATE concurrency_utils)
+
+add_executable(log_sink_daemon src/sink_main.cpp)
+
+target_link_libraries(log_sink_daemon PRIVATE concurrency_utils)
