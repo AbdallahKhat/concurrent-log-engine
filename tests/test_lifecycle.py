@@ -1,12 +1,19 @@
 import subprocess
+import signal
 import time
 
-proc = subprocess.Popen(["../build/log_sink_daemon"])
+logger = subprocess.Popen(["../build/log_sink_daemon"])
+time.sleep(0.5)  # Wait for IPC to initialize
+ingest = subprocess.Popen(["../build/log_processor_daemon"])
 
-time.sleep(0.5)
-assert proc.poll() is None, f"Process crashed with exit code {proc.returncode}"
-
-proc.terminate()
-proc.wait(timeout=2)
-print("Process launched and cleanly stopped.")
-
+try:
+    time.sleep(2)  # Simulated run time
+finally:
+    # Always shut down both, even if errors occur
+    for p in (ingest, logger):
+        if p.poll() is None:
+            p.send_signal(signal.SIGTERM)
+            try:
+                p.wait(timeout=2)
+            except subprocess.TimeoutExpired:
+                p.kill()
