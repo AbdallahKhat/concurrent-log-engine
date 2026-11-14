@@ -45,3 +45,8 @@ Makefile
 *.log
 input_logs.txt
 filtered_errors.txt
+
+# python artifacts
+.venv/
+__pycache__/
+.pytest_cache/
