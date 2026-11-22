@@ -1,3 +1,4 @@
+#include "cli_parser.hpp"
 #include "ipc_config.hpp"
 #include "log_analyzer.hpp"
 #include "log_ipc_receiver.hpp"
@@ -34,8 +35,12 @@ bool unlink_message_queue_if_exists()
     return true;
 }
 
-int main()
+int main(int argc, char* argv[])
 {
+    const auto cli_cfg = cli::parse_sink_args(argc, argv);
+    if (cli_cfg.should_exit) { return cli_cfg.exit_code; }
+    if (!cli::validate_output_file(cli_cfg.path)) { return EXIT_FAILURE; }
+
     sigset_t set = block_shutdown_signals();
 
     ThreadSafeQueue<std::string> filtered_issue_queue;
@@ -52,7 +57,7 @@ int main()
     std::jthread ipc_receiver_thread(&LogIPCReceiver::start_receiving, &log_ipc_receiver,
                                      shutdown_tk);
 
-    std::jthread writer_thread(LogWriter{filtered_issue_queue, "./output.log"}, shutdown_tk);
+    std::jthread writer_thread(LogWriter{filtered_issue_queue, cli_cfg.path.string()}, shutdown_tk);
 
     int signal_number;
     sigwait(&set, &signal_number);

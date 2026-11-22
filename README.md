@@ -33,7 +33,7 @@ LogIPCReceiver ──► filtered_issue_queue ──► LogWriter
 | **LogAnalyzer** | Pops from `raw_log_queue`, checks each line for `[WARNING]`/`[ERROR]`/`[CRITICAL]`, pushes matches into `filtered_issue_queue`. |
 | **LogIPCSender** | Pops filtered lines and sends them to POSIX message queue `/mq_processor_to_sink` |
 | **LogIPCReceiver** | Receives lines from POSIX message queue and forwards them to the sink queue |
-| **LogWriter** | Pops from sink queue, appends each line to `output.log`, flushing after every write |
+| **LogWriter** | Pops from sink queue, appends each line to the configured output file, flushing after every write |
 | **ThreadSafeQueue** | Bounded, templated, blocking queue. Producers block when full, consumers block when empty |
 
 ### Shutdown
@@ -52,19 +52,27 @@ make
 
 ## Run
 
-Use two terminals from `build/`:
+From the repository root, start the sink daemon first, then the processor daemon in a second terminal:
 
 ```bash
-# Terminal 1
-./log_sink_daemon
+# Terminal 1 (sink)
+./build/log_sink_daemon --output /path/to/output.log
 ```
 
 ```bash
-# Terminal 2
-./log_processor_daemon
+# Terminal 2 (processor)
+./build/log_processor_daemon --input /path/to/input_file.txt
 ```
 
-The processor reads from `input_file.txt`. The sink writes to `output.log`.
+Both flags are optional (omitting them falls back to `output.log` and `input_file.txt` in the current working directory for quick testing)
+
+### CLI Options
+
+| Daemon | Flag | Default | Description |
+|---|---|---|---|
+| `log_processor_daemon` | `-i, --input <path>` | `input_file.txt` | Input log file to monitor (must exist and be readable) |
+| `log_sink_daemon` | `-o, --output <path>` | `output.log` | Destination log file (parent directory must exist and be writable) |
+| Both | `-h, --help` | — | Print usage information and exit |
 
 Operational note: if `log_sink_daemon` is restarted, also restart `log_processor_daemon` so both processes reattach to the same message queue instance.
 
